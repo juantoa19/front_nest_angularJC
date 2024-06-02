@@ -6,12 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   
-  private baseUrl= "http://127.0.0.1:3000";
+  private baseUrl= "http://jsonplaceholder.typicode.com";
   
   constructor(private http: HttpClient) {}
 
   loginConNest(credenciales: any) {
-    return this.http.get<any>(`${this.baseUrl}/auth/login`, credenciales);
+    return this.http.get<any>(`${this.baseUrl}/todos`, credenciales);
   }
 
   registroConNest(datos: any) {
