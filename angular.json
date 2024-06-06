@@ -29,7 +29,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -105,6 +107,6 @@
     }
   },
   "cli": {
-    "analytics": "4389557f-14b6-47d3-9ce7-26864426a337"
+    "analytics": "8d51bb14-35e6-4773-acf8-9b5ecf14c9be"
   }
 }

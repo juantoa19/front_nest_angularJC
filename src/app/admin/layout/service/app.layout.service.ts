@@ -52,6 +52,7 @@ export class LayoutService {
 
     overlayOpen$ = this.overlayOpen.asObservable();
 
+
     constructor(@Inject(DOCUMENT) private document: Document) {
         effect(() => {
             const config = this.config();
@@ -129,8 +130,8 @@ export class LayoutService {
                 el == this._config.theme
                     ? (el = config.theme)
                     : el == `theme-${this._config.colorScheme}`
-                        ? (el = `theme-${config.colorScheme}`)
-                        : el
+                    ? (el = `theme-${config.colorScheme}`)
+                    : el
             )
             .join('/');
 

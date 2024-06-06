@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListaPedidoComponent } from './components/lista-pedido/lista-pedido.component';
-import { MuevoPedidoComponent } from './components/muevo-pedido/muevo-pedido.component';
 import { NuevoPedidoComponent } from './components/nuevo-pedido/nuevo-pedido.component';
 
 
@@ -9,7 +8,6 @@ import { NuevoPedidoComponent } from './components/nuevo-pedido/nuevo-pedido.com
 @NgModule({
   declarations: [
     ListaPedidoComponent,
-    MuevoPedidoComponent,
     NuevoPedidoComponent
   ],
   imports: [
