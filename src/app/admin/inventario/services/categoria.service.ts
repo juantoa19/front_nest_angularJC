@@ -14,4 +14,3 @@ export class CategoriaService {
     return this.http.get(`${this.baseUrl}/categoria`)
   }
 }
-``
