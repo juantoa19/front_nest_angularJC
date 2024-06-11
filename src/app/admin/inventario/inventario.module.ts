@@ -8,8 +8,7 @@ import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { ReactiveFormsModule } from '@angular/forms';
-
-
+import { ToolbarModule } from 'primeng/toolbar'; // Importa ToolbarModule con la primera letra en mayúscula
 
 @NgModule({
   declarations: [
@@ -23,8 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     DialogModule,
     ButtonModule,
     InputTextModule,
-    ReactiveFormsModule
-    
+    ReactiveFormsModule,
+    ToolbarModule // Asegúrate de importar ToolbarModule con la primera letra en mayúscula
   ]
 })
 export class InventarioModule { }
