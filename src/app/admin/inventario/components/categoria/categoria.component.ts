@@ -19,7 +19,8 @@ export class CategoriaComponent implements OnInit {
   categorias: Categoria[] = []
   dialog_visible: boolean = false
   categoriaForm= new FormGroup({
-    nombreCategoria: new FormControl('')
+    nombreCategoria: new FormControl(''),
+    detalle: new FormControl('')
   });
 
   ngOnInit(): void {
