@@ -6,22 +6,23 @@ import { Component } from '@angular/core';
   styleUrl: './producto.component.scss'
 })
 export class ProductoComponent {
-  products:any[]=[
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"},
-    {id:1, nombre:"teclado", precio:394.96, categoria_id:5, stock:12, estado:"Completo"}
+  libros:any[]=[
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"ambientado",librofav:"si",categoria_id:5, estado:"Completo"},
+
+
   ];
   cols:any[]=[];
 
@@ -30,11 +31,11 @@ export class ProductoComponent {
 
   }
 
-  editProduct(prod:any){
+  editLibros(libr:any){
 
   }
 
-  deleteProduct(prod:any){
+  deleteLibros(libr:any){
 
   }
 
