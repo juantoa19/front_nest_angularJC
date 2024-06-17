@@ -25,7 +25,10 @@ import { InventarioModule } from './inventario/inventario.module';
     InventarioModule
   ],
   providers: [
-    CategoriaService
+    CategoriaService,
+
+   
+    
   ]
 
 })
