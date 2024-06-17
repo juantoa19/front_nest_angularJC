@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { ProductoService } from '../../services/producto.service';
+import { LibroService } from '../../services/producto.service';
 
 @Component({
   selector: 'app-producto',
@@ -7,37 +7,31 @@ import { ProductoService } from '../../services/producto.service';
   styleUrl: './producto.component.scss'
 })
 export class ProductoComponent {
-  
-  categorias = [
-    { name: 'Libros Ficcion', code: 'LF' },
-    { name: 'Libros Infantiles', code: 'LI' },
-    { name: 'Libros Educacion', code: 'LE' },
-    { name: 'Libros Religion', code: 'LR' },
+  private libroService = inject(LibroService)
+  cities: any = [
+    { name: 'Libro Ficcion', code: 'LF' },
+    { name: 'Libro Infantil', code: 'LI' },
+    { name: 'Libro Educacion', code: 'LE' },
+    { name: 'Libro Religion', code: 'LR' },
     { name: 'Entretenimiento', code: 'ETO' }
-];
+  ]
+  libros: any[] = [];
+  cols: any[] = [];
 
-  products:any[]=[
-    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"si",librofav:"harryset",categoria_id:5, estado:"Completo"},
-    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"si",librofav:"harryset",categoria_id:5, estado:"Completo"},
-    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"si",librofav:"harryset",categoria_id:5, estado:"Completo"},
-    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"si",librofav:"harryset",categoria_id:5, estado:"Completo"},
-    {id:1, titulo:"teclado",autor:"Harry",sinopsis:"si",librofav:"harryset",categoria_id:5, estado:"Completo"}
-
-  ];
-
-  cols:any[]=[];
-
-
-  openNew(){
+  constructor() {
+    this.libroService.funListar().subscribe(
+      (res: any) => {
+        this.libros = res.data
+      }
+    )
+  }
+  openNew() {
 
   }
-
-  editLibros(libr:any){
-
-  }
-
-  deleteLibros(libr:any){
+  editLibros(libr: any) {
 
   }
+  deleteLibros(libr: any) {
 
+  }
 }
